@@ -56,7 +56,7 @@
         return false;
       }
 
-      // ახალი პროექტის დამატება
+      // add
       function addProject() {
         const portfolio = document.querySelector(".portfolio-grid");
         const newProject = document.createElement("div");
