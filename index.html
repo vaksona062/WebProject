@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ჩემი პორტფოლიო</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">პორტფოლიო</div>
+        <div class="nav-links">
+          <a href="#portfolio">პროექტები</a>
+          <a href="#contact">კონტაქტი</a>
+          <a href="https://ge.linkedin.com/in/valeri-giginashvili-7299942b4" target="_blank">LinkedIn</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="portfolio">
+        <h2>ჩემი პროექტები</h2>
+        <button onclick="addProject()">პროექტის დამატება</button>
+        <div class="portfolio-grid">
+          <a class="portfolio-item fade-in" href="https://staymate-front.netlify.app/" target="_blank">
+            <img src="./images/StayMate.png" alt="პროექტი 1" />
+            <h3>StayMate</h3>
+          </a>
+
+          <a class="portfolio-item fade-in" href="https://travel-list11.netlify.app/" target="_blank">
+            <img src="./images/faraway.png" alt="პროექტი 2" />
+            <h3>Travel List</h3>
+          </a>
+
+          <a class="portfolio-item fade-in" href="https://pizza-menu11.netlify.app/" target="_blank">
+            <img src="./images/pizza-menu.png" alt="პროექტი 3" />
+            <h3>Pizza Menu</h3>
+          </a>
+
+          <a class="portfolio-item fade-in" href="https://staymate-front1.netlify.app/" target="_blank">
+            <img src="./images/StayMate1.png" alt="პროექტი 4" />
+            <h3>StayMate1</h3>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="formHeader">დამიკავშირდით</h2>
+        <form class="contact-form" onsubmit="return validateForm(event)">
+          <div class="form-group">
+            <label for="name">სახელი:</label>
+            <input type="text" id="name" name="name" />
+            <div class="error-message" id="name-error">
+              გთხოვთ შეიყვანოთ სახელი
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">ელ-ფოსტა:</label>
+            <input type="email" id="email" name="email" />
+            <div class="error-message" id="email-error">
+              გთხოვთ შეიყვანოთ სწორი ელ-ფოსტა
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">შეტყობინება:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <div class="error-message" id="message-error">
+              გთხოვთ შეიყვანოთ შეტყობინება
+            </div>
+          </div>
+          <button type="submit">გაგზავნა</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 ჩემი პორტფოლიო. ყველა უფლება დაცულია.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
