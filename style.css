@@ -29,9 +29,16 @@
     margin: 0 auto;
   }
 
+  .logo-container {
+    display: flex;
+    gap: 10px;
+  }
+
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    text-decoration: none;
+    color: white;
   }
 
   .nav-links {
@@ -173,9 +180,10 @@
     }
   }
 
-  @media (max-width: 498px) {
+  @media (max-width: 548px) {
     .logo {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        margin-top: 9px;
     }
 
     .nav-links {
@@ -184,5 +192,9 @@
 
     .nav-links a {
         font-size: 0.8rem;
+    }
+
+    footer {
+      font-size: 12px;
     }
 }
